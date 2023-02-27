@@ -8,7 +8,7 @@ pipeline {
         }
         stage('deployment') {
             steps{
-                sh 'helm upgrade webapp webapp --recreate-pods'
+                sh 'helm install webapp webapp --recreate-pods'
             }
         }
     }
