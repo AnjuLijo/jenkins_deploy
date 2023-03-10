@@ -8,7 +8,7 @@ pipeline {
         }
         stage('deployment') {
             steps{
-                sh 'helm install webapp webapp'
+                sh 'helm upgrade webapp webapp'
             }
         }
     }
